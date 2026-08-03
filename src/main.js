@@ -1,4 +1,5 @@
 import './style.css'
+import 'virtual:uno.css'
 import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -55,6 +56,10 @@ document.querySelector('#app').innerHTML = `
 
 <div class="ticks"></div>
 <section id="spacer"></section>
+
+<div class="ticks"></div>
+<section id="spacer"></section>
+<footer>Hello</footer>
 `
 
 setupCounter(document.querySelector('#counter'))
