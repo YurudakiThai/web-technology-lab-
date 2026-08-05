@@ -88,6 +88,16 @@
           blue: '#43ABEC',
           green: '#7CFB49',
           yellow: '#FEFB2C',
+          background: {
+            light: '#ffffff',
+            dark: '#0f172a',
+            card: '#f8fafc',
+          },
+          text: {
+            main: '#1e293b',
+            muted: '#64748b',
+            light: '#f8fafc',
+          }
         },
         fontFamily: {
           chakra: ['Chakra Petch', 'sans-serif'],
@@ -114,10 +124,30 @@
         'container-golden': 'max-w-[1280px] mx-auto px-4 sm:px-5 lg:px-8',
         'grid-golden': 'grid grid-cols-1 md:grid-cols-[1fr_0.618fr] gap-6 md:gap-8 lg:gap-10',
         'grid-golden-reverse': 'grid grid-cols-1 md:grid-cols-[0.618fr_1fr] gap-6 md:gap-8 lg:gap-10',
+        'section-padding': 'py-12 md:py-20 lg:py-24',
+        'card-base': 'bg-background-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden',
+        'btn-modern': 'bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 shadow-md hover:shadow-lg',
+        'btn-secondary-modern': 'bg-white hover:bg-gray-50 text-primary font-medium py-3 px-6 rounded-xl border border-gray-200 transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm hover:shadow-md',
+        'heading-1': 'text-3xl sm:text-4xl lg:text-5xl font-bold text-text-main leading-tight',
+        'heading-2': 'text-2xl sm:text-3xl lg:text-4xl font-bold text-text-main leading-tight',
+        'heading-3': 'text-xl sm:text-2xl font-bold text-text-main leading-snug',
+        'body-text': 'text-base text-text-muted leading-relaxed',
+        'body-text-lg': 'text-lg text-text-muted leading-relaxed',
+        'fade-in-up': 'animate-fade-in-up',
+        'hover-lift': 'transition-transform duration-300 hover:-translate-y-1',
+        'glass-effect': 'backdrop-blur-md bg-white/80 border border-white/20',
       },
       rules: [
         ['aspect-golden', { 'aspect-ratio': '1.618' }],
         ['aspect-golden-portrait', { 'aspect-ratio': '0.618' }],
+        ['gradient-primary', { 'background-image': 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)' }],
+        ['gradient-accent', { 'background-image': 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)' }],
+        ['gradient-hero', { 'background-image': 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%)' }],
+        ['animate-fade-in-up', {
+          'animation': 'fadeInUp 0.8s ease-out forwards',
+          'opacity': '0',
+          'transform': 'translateY(20px)'
+        }],
       ],
     }
   </script>
