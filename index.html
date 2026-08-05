@@ -5,165 +5,165 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>วิทยาการคอมพิวเตอร์ ม.แม่โจ้</title>
-
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;600;700&display=swap"
     rel="stylesheet">
-
+  
   <!-- Vite จะ Inject UnoCSS ผ่าน main.js -->
 </head>
 
-<body>
+<body class="font-ibm antialiased">
 
   <!-- ===== HEADER (sticky) ===== -->
   <header class="bg-primary sticky top-0 z-50 shadow-lg">
-    <div class="max-w-6xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-3">
+    <div class="container-golden py-4 flex flex-wrap items-center justify-between gap-3">
       <div class="font-chakra font-bold text-2xl text-yellow">
         CS<span class="text-green">MJU</span>
       </div>
-      <nav class="flex flex-wrap items-center gap-x-8.05 gap-y-26 text-sm md:text-base">
+      <nav class="flex flex-wrap items-center gap-x-6 md:gap-x-8 gap-y-2 text-sm md:text-base">
         <a href="#"
-          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yello">เข้าสู่ระบบ</a>
+          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow transition-colors">เข้าสู่ระบบ</a>
         <a href="/about.html"
-          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow">เกี่ยวกับ</a>
+          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow transition-colors">เกี่ยวกับ</a>
         <a href="#"
-          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow">ข่าวสาร</a>
+          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow transition-colors">ข่าวสาร</a>
         <a href="#"
-          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow">หลักสูตร</a>
+          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow transition-colors">หลักสูตร</a>
         <a href="#"
-          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow">ศิษย์เก่า</a>
+          class="text-white font-chakra font-semibold border-b-2 border-transparent hover:border-yellow transition-colors">ศิษย์เก่า</a>
         <a href="#"
-          class="bg-yellow text-primary font-chakra font-bold px-4 py-1.5 rounded-full hover:bg-green transition-none">เข้าสู่ระบบ</a>
+          class="bg-yellow text-primary font-chakra font-bold px-4 py-1.5 rounded-full hover:bg-green transition-all duration-300 transform hover:scale-105">เข้าสู่ระบบ</a>
       </nav>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="bg-gradient-to-br from-[#213389] to-[#1a2a6e] text-white py-16 md:py-20 relative overflow-hidden">
-    <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
+  <section class="bg-gradient-to-br from-[#213389] to-[#1a2a6e] text-white py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
+    <div class="container-golden grid-golden items-center relative z-10">
       <div>
-        <h1 class="font-chakra font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-yellow">
+        <h1 class="font-chakra font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-yellow">
           สาขาวิทยาการ<span class="text-green">คอมพิวเตอร์</span>
         </h1>
-        <p class="text-lg md:text-xl opacity-90 mt-3 max-w-lg">
+        <p class="text-base sm:text-lg md:text-xl opacity-90 mt-3 max-w-lg">
           คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้<br>Computer SCIENCE
         </p>
         <div class="flex flex-wrap gap-4 mt-6">
-          <a href="#" class="btn-yellow">ดูหลักสูตร</a>
-          <a href="#" class="btn-outline">ติดต่อเรา</a>
+          <a href="#/" class="btn-yellow transform hover:scale-105">ดูหลักสูตร</a>
+          <a href="#/" class="btn-outline transform hover:scale-105">ติดต่อเรา</a>
         </div>
       </div>
-      <div class="bg-white/10 backdrop-blur-sm p-5 rounded-2xl border border-white/16.18">
+      <div class="bg-white/10 backdrop-blur-sm p-4 sm:p-5 rounded-2xl border border-white/16.18">
         <div
-          class="bg-[#0f1a4a] aspect-video rounded-xl flex items-center justify-center text-white/50 font-chakra text-lg border-2 border-dashed border-white/20">
+          class="bg-[#0f1a4a] aspect-golden rounded-xl flex items-center justify-center text-white/50 font-chakra text-lg border-2 border-dashed border-white/20">
           ▶ วิดีโอแนะนำหลักสูตร
         </div>
       </div>
     </div>
     <!-- จุดตกแต่ง -->
-    <div class="absolute -right-0 -bottom-25.88 w-72 h-72 bg-green/10 rounded-full"></div>
+    <div class="absolute -right-0 -bottom-20 sm:-bottom-25 w-48 h-48 sm:w-72 sm:h-72 bg-green/10 rounded-full"></div>
   </section>
 
   <!-- ===== ABOUT + STATS ===== -->
-  <section class="py-16 md:py-20 bg-[#f8faff]">
-    <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <section class="py-12 sm:py-16 md:py-20 bg-[#f8faff]">
+    <div class="container-golden grid-golden items-center">
       <div>
         <h2 class="section-title">เกี่ยวกับ <span class="text-blue">หลักสูตร</span></h2>
-        <p class="text-base md:text-lg text-gray-700 mt-3">
+        <p class="text-sm sm:text-base md:text-lg text-gray-700 mt-3 leading-relaxed">
           หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ ถูกพัฒนาขึ้นเพื่อยกระดับกำลังคนด้านดิจิทัล
           ตอบสนองการเรียนรู้ในศตวรรษที่ 21 ด้วยเนื้อหาที่ทันสมัยและปฏิบัติจริง
         </p>
-        <p class="text-base md:text-lg text-gray-700 mt-4">
+        <p class="text-sm sm:text-base md:text-lg text-gray-700 mt-4 leading-relaxed">
           เราเตรียมความพร้อมให้นักศึกษาสู่การเป็นนักพัฒนา ซอฟต์แวร์ นักวิเคราะห์ข้อมูล และผู้เชี่ยวชาญด้าน AI
           ที่สามารถแข่งขันได้ในระดับสากล
         </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
         <div class="stat-card">
-          <div class="font-chakra font-bold text-4xl text-primary">8</div>
-          <div class="text-gray-600">Module</div>
+          <div class="font-chakra font-bold text-3xl sm:text-4xl text-primary">8</div>
+          <div class="text-gray-600 text-sm sm:text-base">Module</div>
         </div>
         <div class="stat-card border-l-green">
-          <div class="font-chakra font-bold text-4xl text-primary">60+</div>
-          <div class="text-gray-600">รายวิชา</div>
+          <div class="font-chakra font-bold text-3xl sm:text-4xl text-primary">60+</div>
+          <div class="text-gray-600 text-sm sm:text-base">รายวิชา</div>
         </div>
         <div class="stat-card border-l-yellow">
-          <div class="font-chakra font-bold text-4xl text-primary">2,000+</div>
-          <div class="text-gray-600">ศิษย์เก่า</div>
+          <div class="font-chakra font-bold text-3xl sm:text-4xl text-primary">2,000+</div>
+          <div class="text-gray-600 text-sm sm:text-base">ศิษย์เก่า</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== MAJORS ===== -->
-  <section class="py-16 md:py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-5 text-center">
+  <section class="py-12 sm:py-16 md:py-20 bg-white">
+    <div class="container-golden text-center">
       <h2 class="section-title">สาขาวิชาที่ <span class="text-blue">เปิดสอน</span></h2>
       <p class="section-sub mt-2">เลือกเส้นทางที่ใช่สำหรับคุณในโลกเทคโนโลยี</p>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5 mt-10">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-5 mt-8 md:mt-10">
         <div class="major-card">
-          <div class="text-4xl block mb-2">⛓️</div>
-          <h3 class="font-chakra font-bold text-primary text-lg">BLOCKCHAIN</h3>
-          <p class="text-sm text-gray-600">เทคโนโลยีกระจายศูนย์</p>
+          <div class="text-3xl sm:text-4xl block mb-2">⛓️</div>
+          <h3 class="font-chakra font-bold text-primary text-base sm:text-lg">BLOCKCHAIN</h3>
+          <p class="text-xs sm:text-sm text-gray-600">เทคโนโลยีกระจายศูนย์</p>
         </div>
         <div class="major-card border-green">
-          <div class="text-4xl block mb-2">🧠</div>
-          <h3 class="font-chakra font-bold text-primary text-lg">AI & ML</h3>
-          <p class="text-sm text-gray-600">ปัญญาประดิษฐ์</p>
+          <div class="text-3xl sm:text-4xl block mb-2">🧠</div>
+          <h3 class="font-chakra font-bold text-primary text-base sm:text-lg">AI & ML</h3>
+          <p class="text-xs sm:text-sm text-gray-600">ปัญญาประดิษฐ์</p>
         </div>
         <div class="major-card border-yellow">
-          <div class="text-4xl block mb-2">📱</div>
-          <h3 class="font-chakra font-bold text-primary text-lg">WEB & MOBILE</h3>
-          <p class="text-sm text-gray-600">แอปพลิเคชันเว็บและมือถือ</p>
+          <div class="text-3xl sm:text-4xl block mb-2">📱</div>
+          <h3 class="font-chakra font-bold text-primary text-base sm:text-lg">WEB & MOBILE</h3>
+          <p class="text-xs sm:text-sm text-gray-600">แอปพลิเคชันเว็บและมือถือ</p>
         </div>
         <div class="major-card border-primary">
-          <div class="text-4xl block mb-2">⚙️</div>
-          <h3 class="font-chakra font-bold text-primary text-lg">SOFTWARE</h3>
-          <p class="text-sm text-gray-600">วิศวกรรมซอฟต์แวร์</p>
+          <div class="text-3xl sm:text-4xl block mb-2">⚙️</div>
+          <h3 class="font-chakra font-bold text-primary text-base sm:text-lg">SOFTWARE</h3>
+          <p class="text-xs sm:text-sm text-gray-600">วิศวกรรมซอฟต์แวร์</p>
         </div>
         <div class="major-card border-blue">
-          <div class="text-4xl block mb-2">📊</div>
-          <h3 class="font-chakra font-bold text-primary text-lg">DATA SCIENCE</h3>
-          <p class="text-sm text-gray-600">วิทยาการข้อมูล</p>
+          <div class="text-3xl sm:text-4xl block mb-2">📊</div>
+          <h3 class="font-chakra font-bold text-primary text-base sm:text-lg">DATA SCIENCE</h3>
+          <p class="text-xs sm:text-sm text-gray-600">วิทยาการข้อมูล</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== CONTACT / FOOTER ===== -->
-  <section class="bg-primary text-white py-16">
-    <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-10">
+  <section class="bg-primary text-white py-12 sm:py-16">
+    <div class="container-golden grid-golden gap-8 md:gap-10">
       <div>
-        <h2 class="font-chakra font-bold text-3xl md:text-4xl text-yellow">ติดต่อเรา</h2>
-        <p class="text-lg mt-2">
+        <h2 class="font-chakra font-bold text-2xl sm:text-3xl md:text-4xl text-yellow">ติดต่อเรา</h2>
+        <p class="text-base sm:text-lg mt-2">
           <span class="text-green">ภาควิชาวิทยาการคอมพิวเตอร์</span><br>
           คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้
         </p>
-        <div class="mt-5 space-y-1 text-base opacity-90">
+        <div class="mt-5 space-y-1 text-sm sm:text-base opacity-90">
           <p><strong class="text-yellow">ที่อยู่:</strong> ชั้น 6, อาคาร 60 ปี คณะวิทยาศาสตร์</p>
           <p>มหาวิทยาลัยแม่โจ้ จ.เชียงใหม่</p>
           <p><strong class="text-yellow">โทร:</strong> 0-1234-5678</p>
           <p><strong class="text-yellow">อีเมล:</strong> cs@mju.ac.th</p>
         </div>
       </div>
-      <div class="bg-white/10 p-6 rounded-2xl border-l-4 border-yellow h-fit">
-        <p class="font-chakra font-bold text-yellow text-xl">📍 แผนที่</p>
-        <p class="mt-3 text-sm leading-relaxed">
+      <div class="bg-white/10 p-5 sm:p-6 rounded-2xl border-l-4 border-yellow h-fit">
+        <p class="font-chakra font-bold text-yellow text-lg sm:text-xl">📍 แผนที่</p>
+        <p class="mt-3 text-xs sm:text-sm leading-relaxed">
           อาคาร 60 ปี คณะวิทยาศาสตร์<br>
           ชั้น 6 มหาวิทยาลัยแม่โจ้<br>
           ต.หนองหาร อ.สันทราย<br>
           จ.เชียงใหม่ 50290
         </p>
-        <p class="mt-4 text-green font-chakra font-bold text-lg">
+        <p class="mt-4 text-green font-chakra font-bold text-base sm:text-lg">
           🌐 cs.mju.ac.th
         </p>
       </div>
     </div>
-    <div class="max-w-6xl mx-auto px-5 mt-12 pt-6 border-t border-white/20 text-center text-sm opacity-70">
+    <div class="container-golden mt-10 sm:mt-12 pt-6 border-t border-white/20 text-center text-xs sm:text-sm opacity-70">
       &copy; 2026 ภาควิชาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้
     </div>
   </section>
