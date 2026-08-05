@@ -5,6 +5,8 @@
     "": {
       "name": "unocss",
       "devDependencies": {
+        "@unocss/preset-uno": "^66.7.5",
+        "@unocss/preset-wind": "^66.7.5",
         "unocss": "^66.7.5",
         "vite": "^8.2.0",
       },
