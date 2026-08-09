@@ -62,10 +62,10 @@ a { color: inherit; text-decoration: none; }
 .site-nav.is-open {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 16px;
+  gap: 12px;
+  padding: 1.618rem;
   background: #141d5b;
-  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-top: 10px solid rgba(255, 255, 255, .1);
 }
 
 .nav-link {

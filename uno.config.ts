@@ -38,7 +38,7 @@ export default defineConfig({
   },
 
   shortcuts: {
-    wrap: 'mx-auto w-full max-w-6xl px-4 md:px-6',
+    wrap: 'mx-auto w-full max-w-5xl px-3.618 md:px-1',
     heading: 'font-heading font-bold tracking-tight text-white',
   },
 
