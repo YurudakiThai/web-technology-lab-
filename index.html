@@ -1,13 +1,236 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>unocss</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สาขาวิทยาการคอมพิวเตอร์ — คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body class="bg-night font-sans text-white antialiased">
+
+  <header class="header-line sticky top-0 z-40 bg-navy/95 backdrop-blur">
+    <div class="wrap flex min-h-16 items-center justify-between gap-4">
+      <a href="/" class="logo-gradient font-heading text-lg font-bold">Computer Science</a>
+
+      <button class="nav-toggle text-2xl md:hidden" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+
+      <nav class="site-nav" aria-label="เมนูหลัก">
+        <a class="nav-link text-sm" href="/about.html">เกี่ยวกับ</a>
+        <a class="nav-link text-sm" href="/news.html">ข่าวสาร</a>
+        <a class="nav-link text-sm" href="#curriculum">หลักสูตร</a>
+        <a class="nav-link text-sm" href="#more-info">ศิษย์เก่า</a>
+        <a class="nav-link text-sm" href="#contact">ติดต่อเรา</a>
+        <a class="btn-gradient rounded-lg px-5 py-2 font-heading text-sm font-semibold transition hover:brightness-110"
+          href="#">เข้าสู่ระบบ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-grid-bg overflow-hidden pb-14 pt-24 md:pb-20 md:pt-32">
+      <div class="wrap">
+        <h1 class="heading text-4xl md:text-6xl">สาขาวิทยาการคอมพิวเตอร์</h1>
+
+        <p class="mt-3 font-heading text-xl md:text-3xl">
+          คณะวิทยาศาสตร์ <span class="text-leaf">มหาวิทยาลัยแม่โจ้</span>
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-6">
+          <a href="#curriculum"
+            class="btn-gradient rounded-xl px-6 py-3 font-heading text-sm font-semibold shadow-lg transition hover:brightness-105">
+            สำรวจหลักสูตร
+          </a>
+
+          <a href="#" class="inline-flex items-center gap-3 transition hover:text-leaf">
+            <span class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-white">
+              <span class="i-mdi-play inline-block"></span>
+            </span>
+            รับชมวิดีโอแนะนำ
+          </a>
+        </div>
+
+        <figure class="relative mt-10 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+          <img class="hero-image" src="/images/hero-building.jpg" alt="อาคารสาขาวิทยาการคอมพิวเตอร์" />
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-night/90 to-transparent p-4 text-sm">
+            อาคาร 60 ปี คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-label="สาขาที่โดดเด่น">
+      <div class="ticker-track">
+        <span class="ticker-item">BLOCKCHAIN</span>
+        <span class="ticker-item">AI &amp; MACHINE LEARNING</span>
+        <span class="ticker-item">WEB &amp; MOBILE</span>
+        <span class="ticker-item">DATA SCIENCE</span>
+        <span class="ticker-item">SOFTWARE ENGINEERING</span>
+        <span class="ticker-item">CLOUD &amp; DEVOPS</span>
+        <span class="ticker-item">CYBER SECURITY</span>
+        <span class="ticker-item" aria-hidden="true">BLOCKCHAIN</span>
+        <span class="ticker-item" aria-hidden="true">AI &amp; MACHINE LEARNING</span>
+        <span class="ticker-item" aria-hidden="true">WEB &amp; MOBILE</span>
+        <span class="ticker-item" aria-hidden="true">DATA SCIENCE</span>
+        <span class="ticker-item" aria-hidden="true">SOFTWARE ENGINEERING</span>
+        <span class="ticker-item" aria-hidden="true">CLOUD &amp; DEVOPS</span>
+        <span class="ticker-item" aria-hidden="true">CYBER SECURITY</span>
+      </div>
+    </div>
+
+    <!-- เกี่ยวกับเราและหลักสูตร -->
+    <section class="py-14 md:py-20">
+      <div class="wrap">
+        <div class="panel-card rounded-2xl p-6 md:p-8">
+          <h2 class="heading text-2xl md:text-3xl">เกี่ยวกับเราและหลักสูตร</h2>
+          <p class="mt-4 leading-relaxed text-mist">
+            หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์
+            ได้พัฒนาขึ้นเพื่อยกระดับกำลังคนให้เพิ่มขีดความสามารถด้านวิชาการและวิชาชีพ
+            ในกลุ่มอุตสาหกรรมดิจิทัล ตอบสนองการเรียนรู้ในศตวรรษที่ 21
+            และการเปลี่ยนแปลงทางเทคโนโลยีสารสนเทศ
+            ซึ่งเป็นไปตามทิศทางพัฒนาเศรษฐกิจและสังคม
+            โดยสร้างความเชี่ยวชาญและทักษะที่หลากหลาย ได้แก่ …
+            <a class="link-more" href="/about.html">อ่านเพิ่มเติม</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ภาพรวมหลักสูตร -->
+    <section id="curriculum" class="py-14 md:py-20">
+      <div class="wrap">
+        <h2 class="heading text-center text-2xl md:text-3xl">ภาพรวมหลักสูตร</h2>
+
+        <div class="stats-grid mt-10">
+          <div class="stat-card rounded-2xl p-6 text-center">
+            <p class="font-heading text-4xl font-bold">4</p>
+            <p class="mt-2 text-sm font-medium">องค์ความรู้แห่งศาสตร์คอมพิวเตอร์</p>
+          </div>
+          <div class="stat-card rounded-2xl p-6 text-center">
+            <p class="font-heading text-4xl font-bold">8</p>
+            <p class="mt-2 text-sm font-medium">Module การเรียนรู้เชิงแนวคิดและปฏิบัติจริง</p>
+          </div>
+          <div class="stat-card rounded-2xl p-6 text-center">
+            <p class="font-heading text-4xl font-bold">60+</p>
+            <p class="mt-2 text-sm font-medium">รายวิชาที่เปิดสอน โดยเลือกเรียนตามความสนใจ</p>
+          </div>
+          <div class="stat-card rounded-2xl p-6 text-center">
+            <p class="font-heading text-4xl font-bold">2,000+</p>
+            <p class="mt-2 text-sm font-medium">นักศึกษาที่สำเร็จการศึกษาแล้วทั้งสิ้น</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ข้อมูลเพิ่มเติม -->
+    <aside id="more-info" class="py-14 md:py-20" aria-label="ข้อมูลเพิ่มเติม">
+      <div class="wrap">
+        <h2 class="heading text-center text-2xl md:text-3xl">ข้อมูลเพิ่มเติม</h2>
+
+        <div class="info-grid mt-10">
+          <a href="/about.html" class="info-card flex flex-col items-center gap-3 rounded-xl p-6 text-center">
+            <span class="i-mdi-information-outline text-3xl text-sun"></span>
+            <span class="font-heading text-lg">เกี่ยวกับเรา</span>
+            <span class="text-xs text-white/70">ความเป็นมา วิสัยทัศน์ และจุดเด่นของสาขา</span>
+          </a>
+          <a href="/about.html" class="info-card flex flex-col items-center gap-3 rounded-xl p-6 text-center">
+            <span class="i-mdi-school-outline text-3xl text-sun"></span>
+            <span class="font-heading text-lg">หลักสูตรและแผนการเรียน</span>
+            <span class="text-xs text-white/70">โครงสร้างรายวิชาและเส้นทางเรียน 4 ปี</span>
+          </a>
+          <a href="/news.html" class="info-card flex flex-col items-center gap-3 rounded-xl p-6 text-center">
+            <span class="i-mdi-party-popper text-3xl text-sun"></span>
+            <span class="font-heading text-lg">กิจกรรม</span>
+            <span class="text-xs text-white/70">กิจกรรมนักศึกษา เวิร์กชอป และค่ายต่าง ๆ</span>
+          </a>
+          <a href="/news.html" class="info-card flex flex-col items-center gap-3 rounded-xl p-6 text-center">
+            <span class="i-mdi-account-group-outline text-3xl text-sun"></span>
+            <span class="font-heading text-lg">ศิษย์เก่า</span>
+            <span class="text-xs text-white/70">เครือข่ายศิษย์เก่าและเรื่องราวสร้างแรงบันดาลใจ</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ข่าวล่าสุด -->
+    <section class="py-14 md:py-20">
+      <div class="wrap">
+        <h2 class="heading text-center text-2xl md:text-3xl">
+          ข่าวสาร และกิจกรรม <span class="text-gradient">ล่าสุด</span>
+        </h2>
+
+        <div class="news-grid mt-10">
+          <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg">
+            <img class="news-image" src="/images/news-mou.jpg" alt="" />
+            <div class="p-5">
+              <time class="text-xs text-leaf" datetime="2026-06-12">12 มิถุนายน 2569</time>
+              <h3 class="mt-2 font-heading text-base">สาขาฯ ลงนาม MOU ความร่วมมือวิชาการกับบริษัทเทคโนโลยีชั้นนำ</h3>
+            </div>
+          </article>
+
+          <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg">
+            <img class="news-image" src="/images/news-grad.jpg" alt="" />
+            <div class="p-5">
+              <time class="text-xs text-leaf" datetime="2026-04-02">2 เมษายน 2569</time>
+              <h3 class="mt-2 font-heading text-base">แสดงความยินดีบัณฑิตสำเร็จการศึกษา ประจำปีการศึกษา 2568</h3>
+            </div>
+          </article>
+
+          <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg">
+            <img class="news-image" src="/images/news-puzzle.jpg" alt="" />
+            <div class="p-5">
+              <time class="text-xs text-leaf" datetime="2026-03-18">18 มีนาคม 2569</time>
+              <h3 class="mt-2 font-heading text-base">เวิร์กชอป Teamwork &amp; Problem Solving สำหรับนักศึกษาปี 1</h3>
+            </div>
+          </article>
+        </div>
+
+        <p class="mt-10 text-center">
+          <a href="/news.html"
+            class="btn-gradient inline-block rounded-xl px-6 py-3 font-heading text-sm font-semibold transition hover:brightness-105">ดูทั้งหมด</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ติดต่อเรา -->
+    <section id="contact" class="bg-navy/60 py-14 md:py-20">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 class="heading text-2xl md:text-3xl">ติดต่อเรา</h2>
+
+          <p class="mt-4 leading-relaxed text-mist">
+            ชั้น 6 อาคาร 60 ปี คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้<br />
+            63 หมู่ 4 ต.หนองหาร อ.สันทราย<br />
+            จ.เชียงใหม่ 50290
+          </p>
+
+          <ul class="mt-6 flex list-none gap-3 p-0">
+            <li><a
+                class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-xl text-[#ff0000] transition hover:scale-110"
+                href="#" aria-label="YouTube">▶</a></li>
+            <li><a
+                class="flex h-11 w-11 items-center justify-center rounded-full bg-[#06c755] text-xl transition hover:scale-110"
+                href="#" aria-label="LINE">💬</a></li>
+            <li><a
+                class="flex h-11 w-11 items-center justify-center rounded-full bg-[#1877f2] text-xl font-bold transition hover:scale-110"
+                href="#" aria-label="Facebook">f</a></li>
+          </ul>
+        </div>
+
+        <iframe class="map-frame rounded-2xl" title="แผนที่มหาวิทยาลัยแม่โจ้"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=98.9985%2C18.7876%2C99.0285%2C18.8076&amp;layer=mapnik&amp;marker=18.7976%2C99.0136"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 py-6 text-center text-sm text-mist">
+    Copyright © 2026 Computer Science MJU
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

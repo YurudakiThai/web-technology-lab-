@@ -3,24 +3,44 @@ import {
   presetUno,
   presetAttributify,
   presetIcons,
+  presetWebFonts,
 } from 'unocss'
 
 export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetIcons(),
-  ],
+    presetIcons({ scale: 1.1 }),
 
-  shortcuts: {
-    btn: 'inline-flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition',
-    'btn-primary': 'bg-blue-600 text-white hover:bg-blue-700',
-    card: 'rounded-xl bg-white p-6 shadow-md',
-  },
+    presetWebFonts({
+      provider: 'google',
+      fonts: {
+        heading: 'Chakra Petch:500,600,700',
+        sans: 'IBM Plex Sans Thai:400,500,600',
+      },
+    }),
+  ],
 
   theme: {
     colors: {
-      brand: '#0ea5e9',
+      night: '#0a1033',
+      navy: '#141d5b',
+      panel: '#0f1a4d',
+      royal: '#2946e8',
+      mist: '#b6c0e2',
+
+      // สี gradient ตามลำดับที่กำหนด
+      deep: '#213389',
+      sky: '#43abec',
+      leaf: '#7cfb49',
+      sun: '#fefb2c',
     },
   },
+
+  shortcuts: {
+    wrap: 'mx-auto w-full max-w-6xl px-4 md:px-6',
+    heading: 'font-heading font-bold tracking-tight text-white',
+  },
+
+  inspector: true,
 })
