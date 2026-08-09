@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Golden Grid Template</title>
+</head>
+
+<body class="min-h-screen overflow-x-hidden bg-paper font-sans text-ink antialiased">
+
+  <p>hello</p>
+  <!-- พื้นหลังตกแต่ง -->
+  <div class="pointer-events-none fixed inset-0 bg-grid-100 pacity-30"></div>
+  <div class="pointer-events-none fixed -right-24 -top-24 h-80 w-80 rotate-45 bg-accent/20"></div>
+  <div class="pointer-events-none fixed -bottom-28 -left-28 h-96 w-96 rounded-full bg-gold/10"></div>
+
+  <main class="relative z-10 mx-auto max-w-6xl px-4 py-10 md:py-16">
+
+    <!-- Hero -->
+    <header class="card-geo bg-white/80 backdrop-blur">
+      <div class="grid grid-cols-1 gap-8 lg:golden-cols">
+
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.35em] text-accent">
+            Creative Template
+          </p>
+
+          <h1 class="heading mt-4 text-4xl leading-tight text-ink md:text-5xl">
+            ออกแบบอย่างสร้างสรรค์ด้วย Golden Grid
+          </h1>
+
+          <p class="body-text mt-4 max-w-[65ch] text-ink/80">
+            แม่แบบนี้ใช้ UnoCSS ในการจัดวาง layout แบบ responsive
+            ร่วมกับอัตราส่วนทองคำ ฟอนต์ Chakra Petch สำหรับหัวข้อ
+            และ IBM Plex Sans Thai สำหรับเนื้อความ
+            สามารถต่อยอดเป็น landing page, portfolio,
+            หรือหน้าบทความสร้างสรรค์ได้ทันที
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#start" class="btn-primary">
+              เริ่มสร้าง
+            </a>
+
+            <a href="#structure" class="btn-outline">
+              ดูโครงสร้าง
+            </a>
+          </div>
+        </div>
+
+        <div class="relative min-h-[18rem] overflow-hidden rounded-xl border border-ink/10 bg-white">
+          <div class="absolute inset-0 bg-dots"> </div>
+
+          <div class=" absolute left-8 top-8 h-24 w-24 bg-accent shape-diamond"></div>
+          <div class="absolute right-10 top-16 h-20 w-20 bg-gold shape-triangle"></div>
+          <div class="absolute bottom-8 left-1/2 h-28 w-28 -translate-x-1/2 bg-ink shape-hexagon"></div>
+
+          <div
+            class="absolute bottom-6 right-6 rounded-full border border-ink/10 bg-white/80 px-3 py-1 text-xs font-medium">
+            1 : 1.618
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Creative Grid -->
+    <section id="start" class="mt-6 grid grid-cols-1 gap-4 md:golden-cols xl:golden-cols-3">
+
+      <article class="card-light ratio-golden bg-grid">
+        <div class="geo-corner"></div>
+
+        <div class="relative">
+          <h2 class="heading text-xl text-ink">φ Composition</h2>
+          <p class="body-text mt-2 text-sm text-ink/80">
+            ใช้สัดส่วนทองคำเพื่อสร้างความสมดุลระหว่างพื้นที่หลักและพื้นที่รอง
+            เหมาะกับ hero, gallery, card และ section สำคัญ
+          </p>
+        </div>
+      </article>
+
+      <article class="card-light bg-dots">
+        <h2 class="heading text-xl text-ink">Pattern Lab</h2>
+
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <span class="h-12 w-12 bg-accent shape-triangle"></span>
+          <span class="h-12 w-12 bg-gold shape-diamond"></span>
+          <span class="h-12 w-12 bg-ink shape-hexagon"></span>
+          <span class="h-12 w-12 rotate-45 border-2 border-accent"></span>
+        </div>
+      </article>
+
+      <article class="card-light bg-checker">
+        <h2 class="heading text-xl text-ink">Responsive Blocks</h2>
+
+        <div class="mt-4 space-y-2">
+          <div class="h-8 rounded bg-white/80"></div>
+          <div class="h-8 w-4/5 rounded bg-white/70"></div>
+          <div class="h-8 w-3/5 rounded bg-white/60"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Adjustable Ratio -->
+    <section id="structure" class="mt-6 grid grid-cols-1 gap-4 lg:golden-cols-1.25">
+
+      <article class="card-geo bg-white/80">
+        <h2 class="heading text-2xl text-ink">ปรับอัตราส่วนเองได้</h2>
+
+        <p class="body-text mt-2 text-ink/80">
+          ลองเปลี่ยนจาก 1.618 เป็น 1.25, 1.5 หรือ 2.0
+          เพื่อสร้างจังหวะของ layout ที่แตกต่างกัน
+        </p>
+
+        <div class="mt-5 grid grid-cols-1 gap-3 md:grid-cols-[1.68fr_1fr]">
+          <div
+            class="bg-grid flex min-h-[8rem] items-center justify-center rounded-xl border border-ink/10 bg-white/70 font-heading text-lg">
+            1.25fr
+          </div>
+
+          <div
+            class="bg-dots flex min-h-[8rem] items-center justify-center rounded-xl border border-ink/10 bg-white/70 font-heading text-lg">
+            1fr
+          </div>
+        </div>
+
+        <div class="mt-3 grid grid-cols-1 gap-3 md:grid-cols-[2fr_1fr]">
+          <div
+            class="bg-checker flex min-h-[6rem] items-center justify-center rounded-xl border border-ink/10 bg-white/70 font-heading">
+            2fr
+          </div>
+
+          <div
+            class="bg-grid flex min-h-[6rem] items-center justify-center rounded-xl border border-ink/10 bg-white/70 font-heading">
+            1fr
+          </div>
+        </div>
+      </article>
+
+      <aside class="card-geo bg-ink text-white">
+        <h3 class="heading text-lg text-white">สูตรสร้างสรรค์</h3>
+
+        <ul class="body-text mt-3 space-y-3 text-white/80">
+          <li>ใช้ `md:golden-cols` สําหรับ 2 คอลัมน์หลัก</li>
+          <li>ใช้ `xl:golden-cols-3` เพื่อแบ่ง 3 ชั้นแบบ golden</li>
+          <li>ใช้ `ratio-golden` กับภาพ hero หรือ card สําคัญ</li>
+          <li>ซ้อนลาย `bg-grid` + รูปทรงเพื่อเพิ่มมิติ</li>
+        </ul>
+
+        <div class="mt-6 flex gap-2">
+          <span class="h-10 w-10 bg-gold shape-diamond"></span>
+          <span class="h-10 w-10 bg-accent shape-triangle"></span>
+          <span class="h-10 w-10 rounded-full bg-white/20"></span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-ink/10 pt-6 text-sm text-ink/60 md:flex-row">
+      <p class="font-heading">Creative Golden Grid Template</p>
+      <p>ทำด้วย UnoCSS + Chakra Petch + IBM Plex Sans Thai</p>
+    </footer>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
