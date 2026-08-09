@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ข่าวสารและกิจกรรม — Computer Science MJU</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body class="bg-night font-sans text-white antialiased">
+
+  <header class="header-line sticky top-0 z-40 bg-navy/95 backdrop-blur">
+    <div class="wrap flex min-h-16 items-center justify-between gap-4">
+      <a href="/" class="logo-gradient font-heading text-lg font-bold">Computer Science</a>
+      <button class="nav-toggle text-2xl md:hidden" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="เมนูหลัก">
+        <a class="nav-link text-sm" href="/about.html">เกี่ยวกับ</a>
+        <a class="nav-link text-sm text-sun" href="/news.html">ข่าวสาร</a>
+        <a class="nav-link text-sm" href="/#curriculum">หลักสูตร</a>
+        <a class="nav-link text-sm" href="/#more-info">ศิษย์เก่า</a>
+        <a class="nav-link text-sm" href="/#contact">ติดต่อเรา</a>
+        <a class="btn-gradient rounded-lg px-5 py-2 font-heading text-sm font-semibold" href="#">เข้าสู่ระบบ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pb-20 pt-24 md:pt-28">
+    <div class="wrap">
+      <h1 class="heading text-center text-3xl md:text-4xl">ข่าวสาร และกิจกรรม</h1>
+      <p class="mt-2 text-center text-sm text-mist">News &amp; Announcement</p>
+
+      <div class="search-bar mx-auto mt-8 flex max-w-xl items-center gap-3 rounded-xl px-4 py-3">
+        <span class="i-mdi-magnify text-lg text-leaf"></span>
+        <input class="search-input text-sm" type="search" placeholder="ค้นข่าว เช่น MOU, Hackathon, บัณฑิต…"
+          aria-label="ค้นหาข่าวสาร" />
+      </div>
+
+      <div class="news-grid mt-10">
+        <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg"
+          data-search="ลงนาม mou ความร่วมมือ บริษัทเทคโนโลยี">
+          <img class="news-image" src="/images/news-mou.jpg" alt="" />
+          <div class="p-5">
+            <time class="text-xs text-leaf" datetime="2026-06-12">12 มิถุนายน 2569</time>
+            <h3 class="mt-2 font-heading text-base">สาขาฯ ลงนาม MOU ความร่วมมือวิชาการกับบริษัทเทคโนโลยีชั้นนำ</h3>
+          </div>
+        </article>
+
+        <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg"
+          data-search="บัณฑิต สำเร็จการศึกษา แสดงความยินดี">
+          <img class="news-image" src="/images/news-grad.jpg" alt="" />
+          <div class="p-5">
+            <time class="text-xs text-leaf" datetime="2026-04-02">2 เมษายน 2569</time>
+            <h3 class="mt-2 font-heading text-base">แสดงความยินดีบัณฑิตสำเร็จการศึกษา ประจำปีการศึกษา 2568</h3>
+          </div>
+        </article>
+
+        <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg"
+          data-search="เวิร์กชอป teamwork problem solving นักศึกษาปี 1">
+          <img class="news-image" src="/images/news-puzzle.jpg" alt="" />
+          <div class="p-5">
+            <time class="text-xs text-leaf" datetime="2026-03-18">18 มีนาคม 2569</time>
+            <h3 class="mt-2 font-heading text-base">เวิร์กชอป Teamwork &amp; Problem Solving สำหรับนักศึกษาปี 1</h3>
+          </div>
+        </article>
+
+        <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg"
+          data-search="รับสมัคร นักศึกษาฝึกงาน web mobile">
+          <img class="news-image" src="/images/news-mou.jpg" alt="" />
+          <div class="p-5">
+            <time class="text-xs text-leaf" datetime="2026-03-05">5 มีนาคม 2569</time>
+            <h3 class="mt-2 font-heading text-base">เปิดรับนักศึกษาฝึกงานรุ่นใหม่ สาย Web &amp; Mobile</h3>
+          </div>
+        </article>
+
+        <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg"
+          data-search="ทุนการศึกษา นวัตกรรม ดีเด่น">
+          <img class="news-image" src="/images/news-grad.jpg" alt="" />
+          <div class="p-5">
+            <time class="text-xs text-leaf" datetime="2026-02-20">20 กุมภาพันธ์ 2569</time>
+            <h3 class="mt-2 font-heading text-base">ประกาศผลทุนการศึกษาดีเด่นด้านนวัตกรรมดิจิทัล</h3>
+          </div>
+        </article>
+
+        <article class="news-card overflow-hidden rounded-xl bg-panel shadow-lg"
+          data-search="hackathon 48 ชั่วโมง ศิษย์เก่า">
+          <img class="news-image" src="/images/news-puzzle.jpg" alt="" />
+          <div class="p-5">
+            <time class="text-xs text-leaf" datetime="2026-02-09">9 กุมภาพันธ์ 2569</time>
+            <h3 class="mt-2 font-heading text-base">กิจกรรม Hackathon 48 ชั่วโมง จัดโดยเครือข่ายศิษย์เก่า</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-white/10 py-6 text-center text-sm text-mist">
+    Copyright © 2026 Computer Science MJU
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
